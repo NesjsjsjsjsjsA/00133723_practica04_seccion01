@@ -98,7 +98,7 @@ x /= y;
 x %= x;
 console.log(x);
 
-//Caso análisis 
+//Caso análisis
 const masFalsoQueYo = !true;
 //const cherto = true && true;
 let noECherto = false && true;
@@ -114,4 +114,74 @@ console.log(cherto);
 //const noECherto = false || false;
 
 const mayorQue = 100 > 50;
-const
+const menorQue = 50 < 100;
+const mayorOIgualque = 100 >= 50;
+const menorOIgualque = 50 <= 100;
+const igualOCasi = 100 == "100";
+const igualYDelMismoTipo = 100 === 100;
+const noIgual = 100 !== "100";
+
+//Controles de flujo en JS
+
+//bloque básico de un if else
+const Boll = true;
+
+if (Boll) {
+  console.log("Hola cara de papa, em digo True porque me ejecuto");
+} else {
+  console.log("No me he logrado ejecutar");
+}
+
+if (!Boll) {
+  console.log("Hola cara de papa, em digo True porque me ejecuto");
+} else {
+  console.log("No me he logrado ejecutar");
+}
+
+//Conficionales con condiciones intermedias
+
+const miNumero = prompt("Adivina adivinador que valor ando pensando");
+if (miNumero > 5) {
+  alert("Frío, te has pasado");
+} else if (miNumero < 5) {
+  alert("Mi valor es más pequeño que eso");
+} else {
+  alert("!Ahhhh ES 5");
+}
+
+//Bloque case
+
+let numero = prompt("Adivina adivinador");
+switch (numero) {
+  case "5":
+    alert("JAJAJAJ ese es");
+    break;
+  case "4":
+    alert("Casi pero no");
+    break;
+  default:
+    alert("Frio como el calor");
+}
+
+//Bloque while
+
+let edad = prompt("Dime ya tu edad", 0);
+while (edad <= 18) {
+  alert("eres algo joven aun amigo");
+  console.log(edad);
+  edad = prompt("dime tu edad", 0);
+}
+console.log(edad);
+
+//Ciclo for
+for (let i = 0; i < 10; i += 1) {
+  console.log(i);
+}
+
+for (let i = 10; i > 0; i -= 1) {
+  console.log(i);
+}
+
+for (let i = 10, j = 0; i > j; i -= 1) {
+  console.log(i, j);
+}
