@@ -1,42 +1,25 @@
-:root{
-    --blue:#1e90ff;
-    --pink:#E12AFB;
+:root {
+    --blue: #1e90ff;
+    --pink: #E12AFB;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    display: flex;
-    gap: 10px;
-    gap: 10px 20px;
-    row-gap: 10px;
-    column-gap: 20px;
-        align-items: center;
-}
-
-.box{
+.box {
     display: flex;
     background-color: var(--pink);
     flex-direction: row;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     border-radius: 9px;
 }
 
-.box div{
- margin:10px 5px;
- border-radius: 8px;
- padding: 5px;
- background-color: var(--blue);
- width: 33%;
-}
-
-.box div:first-child{
-    width: 64%;
+.box div {
+    margin: 10px 5px;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: var(--blue);
+    width: 33%;
 }
 
 .action:hover {
     background-color: var(--light-gray);
     cursor: progress
 }
-
